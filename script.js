@@ -8,3 +8,11 @@ const jokes = [
     "Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings.",
     "Why did the bicycle fall over? Because it was two-tired!"
 ];
+
+const joketext=document.getElementById("joke");
+const btn=document.getElementById("btn");
+
+btn.addEventListener("click",function(){
+    const randomIndex=Math.floor(Math.random()*jokes.length);
+    joketext.textContent =jokes[randomIndex];
+})
